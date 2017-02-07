@@ -1,0 +1,6 @@
+﻿  Gamegine.cpp
+OpenGL32.lib(OPENGL32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR 已在 SDL2.lib(SDL2.dll) 中定义；已忽略第二个定义
+OpenGL32.lib(OPENGL32.dll) : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+Glew32.lib(glew32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR 已在 SDL2.lib(SDL2.dll) 中定义；已忽略第二个定义
+Glew32.lib(glew32.dll) : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+  Gamegine.vcxproj -> C:\Users\Administrator\documents\visual studio 2015\Projects\SDL_Example_Project1\x64\Debug\Gamegine.lib
