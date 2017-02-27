@@ -1,2 +1,3 @@
 # OPENGL2D_GAME
-Just for learning
+1.Platform:VS2015
+2.Aim of sharing:Just for learning
