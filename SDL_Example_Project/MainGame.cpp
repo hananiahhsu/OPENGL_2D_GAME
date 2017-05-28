@@ -23,17 +23,17 @@ void MainGame::run()
 	initSystems();
 	//Initialzie the sprite
 	_sprites.push_back( new Gamegine::Sprite());
-	_sprites.back()->init(-1.0f, -1.0f, 1.0f, 1.0f, "C:/Users/Administrator/Documents/Visual Studio 2015/Projects/SDL_Example_Project1/Textures/jimmyJump_pack/PNG/CharacterRight_Standing.png"); 
+	_sprites.back()->init(-1.0f, -1.0f, 1.0f, 1.0f, "E:/X_HSU/OPENGL_2D_GAME/Resources/Textures/cat1.png"); 
 
 	_sprites.push_back(new Gamegine::Sprite());
-	_sprites.back()->init(0.0f, -1.0f, 1.0f, 1.0f, "C:/Users/Administrator/Documents/Visual Studio 2015/Projects/SDL_Example_Project1/Textures/jimmyJump_pack/PNG/CharacterRight_Standing.png");
+	_sprites.back()->init(0.0f, -1.0f, 1.0f, 1.0f, "E:/X_HSU/OPENGL_2D_GAME/Resources/Textures/cat1.png");
 
 
 	_sprites.push_back(new Gamegine::Sprite());
-	_sprites.back()->init(-1.0f, 0.0f, 1.0f, 1.0f, "C:/Users/Administrator/Documents/Visual Studio 2015/Projects/SDL_Example_Project1/Textures/jimmyJump_pack/PNG/CharacterRight_Standing.png");
+	_sprites.back()->init(-1.0f, 0.0f, 1.0f, 1.0f, "E:/X_HSU/OPENGL_2D_GAME/Resources/Textures/cat1.png");
 
 	_sprites.push_back(new Gamegine::Sprite());
-	_sprites.back()->init(0.0f, 0.0f, 1.0f, 1.0f, "C:/Users/Administrator/Documents/Visual Studio 2015/Projects/SDL_Example_Project1/Textures/jimmyJump_pack/PNG/CharacterRight_Standing.png");
+	_sprites.back()->init(0.0f, 0.0f, 1.0f, 1.0f, "E:/X_HSU/OPENGL_2D_GAME/Resources/Textures/cat1.png");
 
 
 
@@ -107,7 +107,7 @@ void MainGame::initSystems()
 //variables in the colorShading.frag
 void MainGame::initShaders()
 {
-	_colorProgram.compileShaders("C:/Users/Administrator/Documents/Visual Studio 2015/Projects/SDL_Example_Project1/Shaders/colorShading.vert","C:/Users/Administrator/Documents/Visual Studio 2015/Projects/SDL_Example_Project1/Shaders/colorShading.frag");
+	_colorProgram.compileShaders("E:/X_HSU/OPENGL_2D_GAME/ShaderFiles/colorShader.vert","E:/X_HSU/OPENGL_2D_GAME/ShaderFiles/colorShader.frag");
 	_colorProgram.addAtrribute("vertexPosition");
 
 	_colorProgram.addAtrribute("vertexColor");
@@ -199,7 +199,7 @@ void MainGame::drawGame()
 	glActiveTexture(GL_TEXTURE0);//GL_TEXTURE1 also okay
 	//glBindTexture(GL_TEXTURE_2D,_playerTexture._id);--->change to Sprite.cpp-->draw()
 
-	GLint textureLocation = _colorProgram.getUniformLocation("mySampler");
+	GLint textureLocation = _colorProgram.getUniformLocation("catSampler");
 	glUniform1i(textureLocation,0);//corresponding to GL_TEXTURE0 ABOVE
 
 

@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\GameEngine">
+      <UniqueIdentifier>{df5fc7ad-53b1-4a56-a6f4-6e375dd024c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\GameEngine">
+      <UniqueIdentifier>{6c728439-0068-4b5e-afcf-38c6ff6d1028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ShaderFiles">
+      <UniqueIdentifier>{68a6754d-77b3-4b43-bbf7-4dab16f86042}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -20,6 +29,45 @@
     </ClCompile>
     <ClCompile Include="MainGame.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\Camera2D.cpp">
+      <Filter>源文件\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\Errors.cpp">
+      <Filter>源文件\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\Gamegine.cpp">
+      <Filter>源文件\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\GLSLProgram.cpp">
+      <Filter>源文件\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\GLTexture.cpp">
+      <Filter>源文件\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\ImageLoader.cpp">
+      <Filter>源文件\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\IOManager.cpp">
+      <Filter>源文件\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\picoPNG.cpp">
+      <Filter>源文件\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\resourceManager.cpp">
+      <Filter>源文件\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\Sprite.cpp">
+      <Filter>源文件\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\TextureCache.cpp">
+      <Filter>源文件\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\vertex.cpp">
+      <Filter>源文件\GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Gamegine\Window.cpp">
+      <Filter>源文件\GameEngine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -29,10 +77,71 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\Gamegine\Camera2D.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Gamegine\Gamegine.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Gamegine\Errors.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Gamegine\GLSLProgram.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Gamegine\GLTexture.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Gamegine\picoPNG.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Gamegine\vertex.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Gamegine\Window.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Gamegine\ImageLoader.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Gamegine\IOManager.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Gamegine\Sprite.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Gamegine\resourceManager.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Gamegine\TextureCache.h">
+      <Filter>头文件\GameEngine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SDL_Example_Project1.rc">
       <Filter>资源文件</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Gamegine\Gamegine.vcxproj">
+      <Filter>源文件\GameEngine</Filter>
+    </None>
+    <None Include="..\Gamegine\Gamegine.vcxproj.filters">
+      <Filter>源文件\GameEngine</Filter>
+    </None>
+    <None Include="..\Gamegine\Gamegine.vcxproj.user">
+      <Filter>源文件\GameEngine</Filter>
+    </None>
+    <None Include="..\ShaderFiles\colorShader.vert">
+      <Filter>源文件\ShaderFiles</Filter>
+    </None>
+    <None Include="..\ShaderFiles\colorShader.frag">
+      <Filter>源文件\ShaderFiles</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Gamegine\ReadMe.txt">
+      <Filter>源文件\GameEngine</Filter>
+    </Text>
   </ItemGroup>
 </Project>

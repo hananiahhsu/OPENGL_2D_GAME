@@ -77,9 +77,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>E:\X_HSU\OPENGL_2D_GAME\EXLibs\glew-1.9.0-win64\glew-1.9.0\include;E:\X_HSU\OPENGL_2D_GAME\EXLibs\glfw-3.2.1.bin.WIN64\include\GLFW;E:\X_HSU\OPENGL_2D_GAME\EXLibs\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\X_HSU\OPENGL_2D_GAME\EXLibs\glew-1.9.0-win64\glew-1.9.0\lib;E:\X_HSU\OPENGL_2D_GAME\EXLibs\glfw-3.2.1.bin.WIN64\lib-vc2015;E:\X_HSU\OPENGL_2D_GAME\EXLibs\SDL2-2.0.5\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -87,13 +89,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SDL_Example_Project1\deeps\include\SDL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;E:\X_HSU\OPENGL_2D_GAME\;E:\X_HSU\OPENGL_2D_GAME\EXLibs\SDL2-2.0.5\include;E:\X_HSU\OPENGL_2D_GAME\EXLibs\glfw-3.2.1.bin.WIN64\include\GLFW;E:\X_HSU\OPENGL_2D_GAME\EXLibs\glew-1.9.0-win64\glew-1.9.0\include;E:\X_HSU\OPENGL_2D_GAME\EXLibs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;OpenGL32.lib;Glew32.lib;Gamegine.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)x64\\Debug\;C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SDL_Example_Project1\deeps\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;OpenGL32.lib;Glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\X_HSU\OPENGL_2D_GAME\EXLibs\SDL2-2.0.5\lib\x64;E:\X_HSU\OPENGL_2D_GAME\EXLibs\glfw-3.2.1.bin.WIN64\lib-vc2015;E:\X_HSU\OPENGL_2D_GAME\EXLibs\glew-1.9.0-win64\glew-1.9.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -125,15 +127,51 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Gamegine\Camera2D.cpp" />
+    <ClCompile Include="..\Gamegine\Errors.cpp" />
+    <ClCompile Include="..\Gamegine\Gamegine.cpp" />
+    <ClCompile Include="..\Gamegine\GLSLProgram.cpp" />
+    <ClCompile Include="..\Gamegine\GLTexture.cpp" />
+    <ClCompile Include="..\Gamegine\ImageLoader.cpp" />
+    <ClCompile Include="..\Gamegine\IOManager.cpp" />
+    <ClCompile Include="..\Gamegine\picoPNG.cpp" />
+    <ClCompile Include="..\Gamegine\resourceManager.cpp" />
+    <ClCompile Include="..\Gamegine\Sprite.cpp" />
+    <ClCompile Include="..\Gamegine\TextureCache.cpp" />
+    <ClCompile Include="..\Gamegine\vertex.cpp" />
+    <ClCompile Include="..\Gamegine\Window.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainGame.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Gamegine\Camera2D.h" />
+    <ClInclude Include="..\Gamegine\Errors.h" />
+    <ClInclude Include="..\Gamegine\Gamegine.h" />
+    <ClInclude Include="..\Gamegine\GLSLProgram.h" />
+    <ClInclude Include="..\Gamegine\GLTexture.h" />
+    <ClInclude Include="..\Gamegine\ImageLoader.h" />
+    <ClInclude Include="..\Gamegine\IOManager.h" />
+    <ClInclude Include="..\Gamegine\picoPNG.h" />
+    <ClInclude Include="..\Gamegine\resourceManager.h" />
+    <ClInclude Include="..\Gamegine\Sprite.h" />
+    <ClInclude Include="..\Gamegine\TextureCache.h" />
+    <ClInclude Include="..\Gamegine\vertex.h" />
+    <ClInclude Include="..\Gamegine\Window.h" />
     <ClInclude Include="MainGame.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SDL_Example_Project1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Gamegine\Gamegine.vcxproj" />
+    <None Include="..\Gamegine\Gamegine.vcxproj.filters" />
+    <None Include="..\Gamegine\Gamegine.vcxproj.user" />
+    <None Include="..\ShaderFiles\colorShader.frag" />
+    <None Include="..\ShaderFiles\colorShader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Gamegine\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

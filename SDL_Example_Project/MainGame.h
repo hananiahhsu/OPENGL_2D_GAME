@@ -1,18 +1,18 @@
 #pragma once
 #include<windows.h>
 #include<vector>
-#include<SDL/glew.h>
+#include<GL/glew.h>
 #include<GL/GLU.h>
 #include<GL/GL.h>
 //#include<GL/freeglut.h>
 #include<SDL.h>
 #include<SDL_system.h>
 
-#include <Gamegine/Sprite.h>
-#include <Gamegine/GLSLProgram.h>
-#include <Gamegine/GLTexture.h>
-#include <Gamegine/Window.h>
-#include "Gamegine/Gamegine.h"
+#include "Gamegine\Sprite.h"
+#include "Gamegine\GLSLProgram.h"
+#include "Gamegine\GLTexture.h"
+#include "Gamegine\Window.h"
+#include "Gamegine\Gamegine.h"
 enum class GameState {PLAY,QUIT};
 
 class MainGame
@@ -53,8 +53,10 @@ private:
 	//GLSL
 	Gamegine::GLSLProgram  _colorProgram;
 
+	//You can add texture to solid surface eg a cubic or ball or cylinder ....
 	Gamegine::GLTexture _playerTexture;
-	//
+
+	//control the variation of output color in shader
 	float _time;
 
 

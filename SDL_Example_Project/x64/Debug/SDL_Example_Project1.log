@@ -1,2 +1,8 @@
-﻿  LINK : 没有找到 C:\Users\Administrator\documents\visual studio 2015\Projects\SDL_Example_Project1\x64\Debug\SDL_Example_Project1.exe 或上一个增量链接没有生成它；正在执行完全链接
-  SDL_Example_Project1.vcxproj -> C:\Users\Administrator\documents\visual studio 2015\Projects\SDL_Example_Project1\x64\Debug\SDL_Example_Project1.exe
+﻿  MainGame.cpp
+e:\x_hsu\opengl_2d_game\sdl_example_project\maingame.cpp(131): warning C4244: “初始化”: 从“Uint32”转换到“float”，可能丢失数据
+e:\x_hsu\opengl_2d_game\sdl_example_project\maingame.cpp(134): warning C4305: “+=”: 从“double”到“float”截断
+e:\x_hsu\opengl_2d_game\sdl_example_project\maingame.cpp(154): warning C4244: “参数”: 从“float”转换到“Uint32”，可能丢失数据
+e:\x_hsu\opengl_2d_game\sdl_example_project\maingame.cpp(235): warning C4244: “初始化”: 从“Uint32”转换到“float”，可能丢失数据
+e:\x_hsu\opengl_2d_game\sdl_example_project\maingame.cpp(237): warning C4244: “=”: 从“Uint32”转换到“float”，可能丢失数据
+  SDL_Example_Project1.vcxproj -> E:\X_HSU\OPENGL_2D_GAME\SDL_Example_Project\x64\Debug\SDL_Example_Project1.exe
+  SDL_Example_Project1.vcxproj -> E:\X_HSU\OPENGL_2D_GAME\SDL_Example_Project\x64\Debug\SDL_Example_Project1.pdb (Full PDB)

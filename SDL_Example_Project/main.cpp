@@ -1,7 +1,7 @@
 #include<windows.h>
 #include<iostream>
-#include<SDL/SDL.h>
-#include<SDL/glew.h>
+#include<SDL.h>
+#include<GL/glew.h>
 #include "MainGame.h"
 int main(int argc,char** argv ) {
 	//SDL_Init(SDL_INIT_EVERYTHING);
